@@ -12,7 +12,7 @@ const ParticipantsSetScreen = ({ navigation }) => {
       alert('0보다 크게 입력')
       return
     }
-    navigation.navigate('PrideSetScreen', { participantsCount });
+    navigation.navigate('PrizeSetScreen', { participantsCount });
   }
 
   return (
