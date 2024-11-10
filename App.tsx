@@ -1,9 +1,12 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+import { useLoadFonts } from './src/hooks/useLoadFonts';
 import StackNavigator from './src/navigation/StackNavigation'
 
 export default function App() {
+  useLoadFonts();
+
   return (
     <NavigationContainer>
       <StatusBar backgroundColor="#1F2020" />
