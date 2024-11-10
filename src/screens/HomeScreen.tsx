@@ -1,13 +1,6 @@
 import { SafeAreaView, View, Text, TouchableWithoutFeedback, Keyboard, Image } from 'react-native';
-import { useFonts } from 'expo-font';
 
 const HomeScreen = ({ navigation }) => {
-  const [fontsLoaded] = useFonts({
-    Butler: require("../../assets/fonts/Butler-Bold.otf"),
-  });
-
-  if (!fontsLoaded) return null;
-
   const handleClick = () => {
     navigation.navigate('ParticipantsSetScreen');
   };
