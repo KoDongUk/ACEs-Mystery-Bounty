@@ -1,15 +1,8 @@
 import { SafeAreaView, View, Text, TextInput, Button, Pressable, TouchableWithoutFeedback, Keyboard, StatusBar, Image, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
-import { useFonts } from 'expo-font';
 
 const ParticipantsSetScreen = ({ navigation }) => {
   const [participantsCount, setParticipantsCount] = useState<number | ''>('')
-  const [fontsLoaded] = useFonts({
-    Butler: require("../../assets/fonts/Butler.otf"),
-    BlackHanSans: require("../../assets/fonts/BlackHanSans-Regular.ttf")
-  });
-
-  if (!fontsLoaded) return null;
 
   const handleSubmit = () => {
     if (participantsCount === '') {
