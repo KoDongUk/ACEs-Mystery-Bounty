@@ -13,6 +13,7 @@ const StackNavigator = () => {
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="ParticipantsSetScreen" component={ParticipantsSetScreen} />
       <Stack.Screen name="PrizeSetScreen" component={PrizeSetScreen} />
+      <Stack.Screen name="DrawALotScreen" component={DrawALotScreen} />
     </Stack.Navigator>
   )
 }
